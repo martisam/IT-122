@@ -1,7 +1,7 @@
 {
   "name": "really-large-application",
   "version": "1.0.0",
-  "description": "",
+  "description": "Advanced JavaScript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "colors": "file:../colors"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martisam/IT-122.git"
+  },
+  "bugs": {
+    "url": "https://github.com/martisam/IT-122/issues"
+  },
+  "homepage": "https://github.com/martisam/IT-122#readme"
 }

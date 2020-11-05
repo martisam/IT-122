@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1 style="text-align:center;">Quote Generator</h1>
+<p id="demo"> Welcome to the quote generator press the random quote button to display a random quote, press the "add" button to add your own quote</p>
+
+<button onClick="randQuote()" >Random Quote</button>
+<button onClick="add()" >Add Quote</button>
+
+<script>
+	var quotes = [
+      "If you can dream it, you can do it.",
+      "It's kind of fun to do the impossible.", 
+      "Light in Nature creates the movement of colors.",
+      "The vote is the most powerful nonviolent tool we have.", 
+      "Autumn is a second spring when every leaf is a flower."
+    ];
+
+	function randQuote() {
+      var rand = Math.floor(Math.random() * quotes.length);
+      document.getElementById("demo").innerHTML = quotes[rand];
+	}
+    
+    function add() {
+      var quote = window.prompt("Type your quote here");
+      quotes.push(quote);
+    }
+</script>
+
+
+</body>
+</html>

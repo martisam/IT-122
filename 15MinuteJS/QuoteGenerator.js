@@ -3,12 +3,15 @@ var quotes = [
     "It's kind of fun to do the impossible.", 
     "Light in Nature creates the movement of colors.",
     "The vote is the most powerful nonviolent tool we have.", 
-    "Autumn is a second spring when every leaf is a flower."];
+    "Autumn is a second spring when every leaf is a flower."
+    ];
+    
+var rand = Math.floor(Math.random() * quotes.length);
 
-var rand = Math.floor(Math.random() * quotes.lenght);
+printQuotes(quotes[rand]);
 
 function printQuotes(q) {
     console.log(q);
 }
 
-printQuotes(quotes[rand]);
+//printQuotes(quotes[rand]);
